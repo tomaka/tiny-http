@@ -113,6 +113,9 @@ extern crate encoding;
 extern crate url;
 extern crate chrono;
 
+#[macro_use]
+extern crate nom;
+
 #[cfg(feature = "ssl")]
 extern crate openssl;
 
@@ -134,6 +137,8 @@ pub use response::{ResponseBox, Response};
 
 mod client;
 mod common;
+mod http2;
+mod http2_frame;
 mod request;
 mod response;
 
