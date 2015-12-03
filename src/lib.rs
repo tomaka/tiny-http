@@ -137,6 +137,7 @@ pub use response::{ResponseBox, Response};
 
 mod client;
 mod common;
+mod http1;
 mod http2;
 mod http2_frame;
 mod request;
